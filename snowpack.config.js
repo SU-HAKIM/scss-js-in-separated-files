@@ -2,9 +2,14 @@
 module.exports = {
   mount: {
     /* ... */
+    // directory name: 'build directory'
+    public: '/',
+    src: '/dist/',
   },
   plugins: [
     /* ... */
+    '@snowpack/plugin-react-refresh',
+    '@snowpack/plugin-sass'
   ],
   routes: [
     /* Enable an SPA Fallback in development: */
